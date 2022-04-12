@@ -29,7 +29,7 @@ export default function Home() {
                   <li className="index2"><a href={`/${post._id}`}><h2>{post.title}</h2> </a>
                     <h3>{post.createdAt}</h3>
                   </li>
-                    )
+              )
                 })}
         </ul>
            
