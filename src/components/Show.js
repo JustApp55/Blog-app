@@ -25,27 +25,29 @@ export default function Show() {
     console.log(comments)
 
     return (
-        <div className="show">
-            <h1>Show Page</h1>
-           
-                <div className="view">
-                  <h2 className="show2"> {text.title} </h2>
-                  <div>Written by: {text.author}</div>
-                  <img style={{height:'350px', width: '350px'}} src={text.image} alt="" /> <br/>
-                  <p>{text.body}</p> <br/> 
-                </div> 
+        <div >
+            <h1 className="spage">Show Page</h1>
+            <div className="show">
+                 <div className="view">
+                    <h2 className="show2"> {text.title} </h2>
+                    <div className="show2">Written by: {text.author}</div>
+                     <img style={{height:'550px', width: '550px'}} src={text.image} alt="" id="img" /> <br/>
+                     <p className="show2">{text.body}</p> 
+                 </div> 
                  {comments.map((comment, i) => {
                          return (
                              <div className="comm" key={i}>
-                               <div>{comment.name} </div>
-                               <p>{comment.message} </p>
-                               <div>{comment.date} </div>
+                                 <h4>User Comment</h4>
+                               <div>Name: {comment.name} </div>
+                               <p>Comment: {comment.message} </p>
+                               <div> Date: {comment.date} </div>
                              </div>
                          )
                      })}
+                </div>
                     <br/>  <br/> 
-                <button onClick={() => {nav(`/${id}/edit`)}}> Edit Blog</button> <br/>
-                <button onClick={deleteTheBlog}>Delete</button>     
+                <button onClick={() => {nav(`/${id}/edit`)}} className="sbtn"> Edit Blog </button> <br/> <br/>
+                <button onClick={deleteTheBlog} className="sbtn" > Delete </button>     
         </div>
     )
 }

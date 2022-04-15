@@ -1,17 +1,118 @@
 body {
-  /* background-color: #57cbe2; */
+  background-color: #cfbaf0;
+  /* background-repeat: repeat #54ab26 ; */
 }
+
+/* .....................  App.js  ............... */
+
+#home{
+  text-align: left;
+  font-size: 32px;
+  position: relative;
+  top: 10px;
+  left: 100px;
+}
+
+/* ......................Home Page ................... */
+
+.index {
+  text-align: center;
+  font-size: 4rem;
+}
+
 .art {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none; 
-  /* background-color: #f1faee; */
+  background-color: #c5e2bb;
 }
 
-.index {
+#bat{
+  font-size: 20px;
+}
+
+.btn{
+  /* width: 100px; */
+ position: relative;
+ /* margin-left: 1800px; */
+ top: -183px;
+ left: 2000px;
+
+
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ display: inline-block;
+ padding: 8px 10px;
+ /* font-size: 24px; */
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ outline: none;
+ color: rgb(255, 255, 255);
+ background-color: #e4eee4;
+ border: none;
+ border-radius: 15px;
+ box-shadow: 0 9px #999;
+}
+/* .........................  Show Page ................... */
+
+#img{
+  margin: auto;
+  display: block;
   text-align: center;
 }
 
+.view{
+  background-color: #9cc9cd;
+}
 
+.spage{
+  text-align: center;
+  font-size: 4rem;
+}
 
+.show2{
+  text-align: center;
+  /* background-color: #9cc9cd; */
+}
 
+.comm{
+  background-color: #e9c46a ;
+}
+
+.sbtn{
+  position: relative;
+
+  display: inline-block;
+ padding: 8px 15px;
+ /* font-size: 24px; */
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ outline: none;
+ color: #020601;
+ background-color: #e4eee4;
+ border: none;
+ border-radius: 15px;
+ box-shadow: 0 9px #999;
+}
+
+/*  ............................. Create Page ............ */
+
+.cdiv{
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.crb{
+  font-size: 4rem;
+}
+
+.eblog{
+
+}
+
+.inp{
+  
+}

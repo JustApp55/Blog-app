@@ -23,14 +23,16 @@ export default function Create() {
 
    
     return (
-        <div>
+        <div className="cdiv">
              <h1 className="crb">Create Blog</h1>
             <form onSubmit={createTheBlog} id="eblog">
+                <div className="inp">
             Title: <input type='text' name='title' /> <br/>
             Author: <input type='text' name='author' /> <br/>
                Image: <input type='text' name='image' /> <br/>
                CreatedAt <input type='text' name='createdAt' /> <br/>
                Body: <input type='text' name='body' /> <br/>
+                 </div>
                     <input type='submit' value='New Blog' />
             </form>           
         </div>

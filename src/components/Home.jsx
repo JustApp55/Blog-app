@@ -19,7 +19,7 @@ export default function Home() {
         <div className="post">
             <h1 className="index">List of Blogs</h1>
                 <nav className="btn">
-                    <button onClick={() => {nav("/create")}}>New Blog</button>
+                    <button onClick={() => {nav("/create")}} id="bat">New Blog</button>
                 </nav>
             
         <ul className="art">
@@ -27,8 +27,8 @@ export default function Home() {
               return( 
                 
                   <li className="index2"><a href={`/${post._id}`}><h2>{post.title}</h2> </a>
-                  <img style={{height:'350px', width: '350px'}} src={post.image} alt=""/> <br/>
-                    <h4>{post.createdAt}</h4>
+                    <img style={{height:'350px', width: '350px'}} src={post.image} alt=""/> <br/>
+                    <h4>Date: {post.createdAt}</h4>
                   </li>
               )
                 })}
